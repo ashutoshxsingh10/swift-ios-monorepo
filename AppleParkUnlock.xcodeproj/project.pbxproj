@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		505626AD2DFE217E008E7FD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505626AC2DFE217E008E7FD2 /* MapKit.framework */; };
+		505626AF2DFE21A7008E7FD2 /* DragProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505626AE2DFE21A7008E7FD2 /* DragProgress.swift */; };
+		505626B12DFE21D4008E7FD2 /* EiffelMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505626B02DFE21D4008E7FD2 /* EiffelMap.swift */; };
+		50A4FF192DFEA14F00B76B1C /* LockScreenOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4FF182DFEA14F00B76B1C /* LockScreenOverlay.swift */; };
+		50A4FF1B2DFEA16700B76B1C /* HomeDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4FF1A2DFEA16700B76B1C /* HomeDock.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5056268F2DFE20C9008E7FD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +35,11 @@
 		505626812DFE20C7008E7FD2 /* AppleParkUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleParkUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5056268E2DFE20C9008E7FD2 /* AppleParkUnlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleParkUnlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505626982DFE20C9008E7FD2 /* AppleParkUnlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleParkUnlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		505626AC2DFE217E008E7FD2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		505626AE2DFE21A7008E7FD2 /* DragProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragProgress.swift; sourceTree = "<group>"; };
+		505626B02DFE21D4008E7FD2 /* EiffelMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EiffelMap.swift; sourceTree = "<group>"; };
+		50A4FF182DFEA14F00B76B1C /* LockScreenOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenOverlay.swift; sourceTree = "<group>"; };
+		50A4FF1A2DFEA16700B76B1C /* HomeDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505626AD2DFE217E008E7FD2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +89,14 @@
 		505626782DFE20C7008E7FD2 = {
 			isa = PBXGroup;
 			children = (
+				505626AE2DFE21A7008E7FD2 /* DragProgress.swift */,
+				505626B02DFE21D4008E7FD2 /* EiffelMap.swift */,
+				50A4FF182DFEA14F00B76B1C /* LockScreenOverlay.swift */,
+				50A4FF1A2DFEA16700B76B1C /* HomeDock.swift */,
 				505626832DFE20C7008E7FD2 /* AppleParkUnlock */,
 				505626912DFE20C9008E7FD2 /* AppleParkUnlockTests */,
 				5056269B2DFE20C9008E7FD2 /* AppleParkUnlockUITests */,
+				505626AB2DFE217E008E7FD2 /* Frameworks */,
 				505626822DFE20C7008E7FD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,14 @@
 				505626982DFE20C9008E7FD2 /* AppleParkUnlockUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		505626AB2DFE217E008E7FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505626AC2DFE217E008E7FD2 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505626AF2DFE21A7008E7FD2 /* DragProgress.swift in Sources */,
+				50A4FF192DFEA14F00B76B1C /* LockScreenOverlay.swift in Sources */,
+				50A4FF1B2DFEA16700B76B1C /* HomeDock.swift in Sources */,
+				505626B12DFE21D4008E7FD2 /* EiffelMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AJFM9L39V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -422,6 +454,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AJFM9L39V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
