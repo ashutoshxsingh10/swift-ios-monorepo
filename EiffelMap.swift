@@ -1,21 +1,23 @@
 import SwiftUI
 import MapKit
 
-private let eiffelTower = CLLocationCoordinate2D(latitude: 37.81420,
-                                                 longitude: -122.47795)
-
-
 // ➊ file‐level constant
 private let startHeading: Double = -180   // 15° east of north
 
 struct EiffelMap: View {
     @EnvironmentObject private var drag: DragProgress
-    @State private var cameraPos: MapCameraPosition = .camera(
-        MapCamera(centerCoordinate: eiffelTower,
-                  distance: 1000,
-                  heading: startHeading,  // OK, uses the file‐level constant
-                  pitch: 0)
-    )
+    @Binding var location: MapLocation
+    @State private var cameraPos: MapCameraPosition
+
+    init(location: Binding<MapLocation>) {
+        self._location = location
+        _cameraPos = State(initialValue: .camera(
+            MapCamera(centerCoordinate: location.wrappedValue.coordinate,
+                      distance: 1000,
+                      heading: startHeading,
+                      pitch: 0)
+        ))
+    }
 
     var body: some View {
         Map(position: $cameraPos, interactionModes: [])
@@ -23,12 +25,13 @@ struct EiffelMap: View {
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
             .onChange(of: drag.value) { updateCamera($0) }
+            .onChange(of: location) { _ in resetCamera() }
     }
 
     private func updateCamera(_ t: CGFloat) {
         let finalHeading: Double = -10
         let heading = startHeading + (finalHeading - startHeading) * Double(t)
-        let cam = MapCamera(centerCoordinate: eiffelTower,
+        let cam = MapCamera(centerCoordinate: location.coordinate,
                             distance: 1000 - 450 * t,
                             heading: heading,
                             pitch: 55 * t)
@@ -40,5 +43,14 @@ struct EiffelMap: View {
                 cameraPos = .camera(cam)
             }
         }
+    }
+
+    private func resetCamera() {
+        cameraPos = .camera(
+            MapCamera(centerCoordinate: location.coordinate,
+                      distance: 1000,
+                      heading: startHeading,
+                      pitch: 0)
+        )
     }
 }

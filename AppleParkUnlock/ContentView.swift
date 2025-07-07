@@ -4,13 +4,20 @@ struct ContentView: View {
     @StateObject private var drag = DragProgress()          // unlock progress
     @State private var dragBase: CGFloat = 0
     @GestureState      private var isDragging = false       // finger down?
+    @State private var showPicker = true
+    @State private var selectedLocation = defaultLocations.first!
 
     var body: some View {
        ZStack(alignment: .bottom) {
-             EiffelMap()
+             EiffelMap(location: $selectedLocation)
              LockScreenOverlay()
              HomeDock()
          }
+        .fullScreenCover(isPresented: $showPicker) {
+            LocationSelectionView(selection: $selectedLocation,
+                                  isPresented: $showPicker,
+                                  locations: defaultLocations)
+        }
 
         .environmentObject(drag)
         .gesture(
