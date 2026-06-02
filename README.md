@@ -61,8 +61,7 @@ Each project is self-contained within its directory. Navigate to the specific pr
 ├── Flower_randomizer/
 ├── GradientGenerator/
 ├── LightningRating/
-├── README.md
-└── PROJECTS.md
+└── README.md
 ```
 
 ## 🛠 Development
@@ -74,7 +73,6 @@ To add a new project to the monorepo:
 1. Create a new directory at the root level
 2. Copy your project files into the directory
 3. Update this README with project information
-4. Update PROJECTS.md with detailed documentation
 
 ### Working with Individual Projects
 
