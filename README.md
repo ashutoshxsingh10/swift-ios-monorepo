@@ -9,37 +9,37 @@ A comprehensive collection of reusable Swift/iOS components and utilities organi
 1. **AppleMapsUnlock** - Prototype for unlocking phone using Apple Maps
    - Location: `/AppleMapsUnlock`
    - Description: Prototype of unlocking phone
-   - Repository: https://github.com/ashutoshxsingh10/AppleMapsUnlock
+   - Code: [`./AppleMapsUnlock`](./AppleMapsUnlock) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/AppleMapsUnlock))
 
 2. **CharacterAnimation** - Character animation implementation
    - Location: `/CharacterAnimation`
    - Description: Character animation implementation
-   - Repository: https://github.com/ashutoshxsingh10/CharacterAnimation
+   - Code: [`./CharacterAnimation`](./CharacterAnimation) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/CharacterAnimation))
 
 3. **ConfettiBurstApp** - Confetti burst effects
    - Location: `/ConfettiBurstApp`
    - Description: Confetti burst animation effects
-   - Repository: https://github.com/ashutoshxsingh10/ConfettiBurstApp
+   - Code: [`./ConfettiBurstApp`](./ConfettiBurstApp) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/ConfettiBurstApp))
 
 4. **CursorTracking** - Cursor tracking functionality
    - Location: `/CursorTracking`
    - Description: Cursor tracking implementation
-   - Repository: https://github.com/ashutoshxsingh10/CursorTracking
+   - Code: [`./CursorTracking`](./CursorTracking) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/CursorTracking))
 
 5. **Flower_randomizer** - Flower randomization app
    - Location: `/Flower_randomizer`
    - Description: Flower randomization utility
-   - Repository: https://github.com/ashutoshxsingh10/Flower_randomizer
+   - Code: [`./Flower_randomizer`](./Flower_randomizer) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/Flower_randomizer))
 
 6. **GradientGenerator** - Gradient generation utility
    - Location: `/GradientGenerator`
    - Description: Gradient generation utility
-   - Repository: https://github.com/ashutoshxsingh10/GradientGenerator
+   - Code: [`./GradientGenerator`](./GradientGenerator) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/GradientGenerator))
 
 7. **LightningRating** - Lightning-themed rating component
    - Location: `/LightningRating`
    - Description: Lightning-themed rating component
-   - Repository: https://github.com/ashutoshxsingh10/LightningRating
+   - Code: [`./LightningRating`](./LightningRating) (consolidated here from the now-archived [standalone repo](https://github.com/ashutoshxsingh10/LightningRating))
 
 ## 🚀 Getting Started
 
